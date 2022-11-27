@@ -93,6 +93,10 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+input::placeholder,
+textarea::placeholder{
+  color: #b5b4b4;
+}
 
 .main {
     -webkit-box-flex: 1;
@@ -103,7 +107,7 @@ body {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 
 a {
@@ -2375,13 +2379,13 @@ area{
 }
 .contacts__inner{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.1fr;
   column-gap: 30px;
 }
 .contacts__title{
   text-align: start;
   font-family: "Quicksand-Medium", sans-serif;
- font-weight: 500;
+  font-weight: 500;
 }
 .contacts__text{
   text-align: justify;
@@ -2407,8 +2411,7 @@ area{
   box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
   background-repeat: no-repeat;
   left: 2px;
-  top: 0;
-  
+  top: 0; 
 }
 
 .contacts__info a{
@@ -2418,7 +2421,7 @@ area{
   font-weight: 500;
 }
 .contacts__form{
-  max-width: 670px;
+ 
   padding: 60px 40px;
   box-shadow: 0px 10px 40px 0px rgba(172, 172, 172, 0.3);
 }
@@ -2447,25 +2450,25 @@ area{
   border: none;
   margin-bottom: 35px;
   padding-left: 20px;
- 
 }
 .contacts__form-input{
-  max-width: 280px;
+  max-width: 330px;
   width: 50%;
+}
+.contacts__form-input:first-child{
+  margin-right: 20px;
 }
 
 .contacts__form-input--sub{
   max-width: 685px;
   width: 100%;
-  
-
-  
 }
 .contacts__form-textarea{
   max-width: 685px;
   width: 100%;
   height: 210px;
   resize: none;
+  padding-top: 20px;
 }
 
 /* 
