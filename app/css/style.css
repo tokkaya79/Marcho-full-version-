@@ -453,6 +453,7 @@ a {
     height: 370px;
     width: 370px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .products-item__img {
