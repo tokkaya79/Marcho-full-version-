@@ -1,5 +1,14 @@
 $(function(){
 
+  const menuList = document.querySelector('.menu__list')
+  const burgerIcon = document.querySelector('.burger')
+
+  if(burgerIcon){
+    burgerIcon.addEventListener('click', function(e){
+        menuList.classList.toggle('_active')
+     })
+  }
+
   let map;
 
 function initMap() {
@@ -108,13 +117,21 @@ $('.button-list').on('click', function () {
 
  });
 
-
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
     fade: true,
     autoplay: true,
     autoplaySpead: 2000,
+    responsive: [
+      {
+        breakpoint: 780,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+      }
+    ]
   });
 
  $(".star").rateYo({
